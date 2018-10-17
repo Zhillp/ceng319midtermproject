@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:label="@string/AboutUs"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_login2"
+        app:layout_constraintBottom_toTopOf="@+id/description1"
+        app:layout_constraintEnd_toStartOf="@+id/name1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/name1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/quote1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pic1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quote1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/karanquote"
+        app:layout_constraintBottom_toTopOf="@+id/name2"
+        app:layout_constraintEnd_toEndOf="@+id/quote2"
+        app:layout_constraintStart_toStartOf="@+id/quote2"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/karanpara"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/pic2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1" />
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/ic_login2"
+        app:layout_constraintBottom_toTopOf="@+id/description2"
+        app:layout_constraintEnd_toStartOf="@+id/name2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description1" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/name2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/quote2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pic2"
+        app:layout_constraintTop_toBottomOf="@+id/quote1" />
+
+    <TextView
+        android:id="@+id/quote2"
+        android:layout_width="200sp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="151dp"
+        android:text="@string/zhillquote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="@string/zhillpara"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic2" />
+</android.support.constraint.ConstraintLayout>

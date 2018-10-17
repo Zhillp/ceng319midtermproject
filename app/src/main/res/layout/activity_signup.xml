@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignupActivity"
+    tools:layout_editor_absoluteY="81sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24sp"
+        android:paddingTop="60sp"
+        android:paddingRight="24sp"
+        android:paddingBottom="60sp">
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:ems="9"
+            android:hint="@string/fnamehint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:ems="9"
+            android:hint="@string/lnamehint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:ems="9"
+            android:hint="@string/emailhint"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:ems="9"
+            android:hint="@string/passwordhint"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/rpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:ems="9"
+            android:hint="@string/passwordhint2"
+            android:inputType="textPassword" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25sp" />
+
+        <!--Back and Create account button-->
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0sp"
+            android:padding="12sp"
+            android:text="@string/backbutton"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/createbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="0sp"
+            android:padding="12sp"
+            android:text="@string/CreateAccount"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>
