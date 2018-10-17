@@ -15,6 +15,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgotpassword);
         button = (Button) findViewById(R.id.backToLoginBtn);

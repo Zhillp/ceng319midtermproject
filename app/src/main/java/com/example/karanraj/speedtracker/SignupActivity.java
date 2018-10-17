@@ -11,6 +11,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         button = (Button) findViewById(R.id.backbutton);
